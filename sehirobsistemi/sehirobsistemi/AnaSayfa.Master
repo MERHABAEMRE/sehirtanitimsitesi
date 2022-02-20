@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AnaSayfa.master.cs" Inherits="sehirobsistemi.AnaSayfa" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+
+    <link href="css/mystill.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="sana">
+            
+            <div class="menu"> 
+                <ul>
+                    <li> <a href="default.aspx"> ANASAYFA </a>  </li>
+                    <li> <a href="yerler.aspx"> TARİHİ YERLER </a>  </li>
+                    <li> <a href="yiyecekler.aspx"> MEŞHUR YİYECEKLER </a>  </li>
+                    <li> <a href="unluler.aspx"> ÜNLÜ İNSANLAR </a>  </li>
+                    <li> <a href="ekle.aspx"> ÜYE OL </a>  </li>
+                </ul>
+            </div>
+            <div class="icerik"> 
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <div class="alttaraf">
+                <h3>Tokat Gazi Osmanpaşa Üniversitesi Web Programlama ödevi</h3>
+                <h3>ALİ EMRE BÖLÜKBAŞI - 180508014</h3>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>
